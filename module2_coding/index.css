@@ -1,16 +1,31 @@
 *{
   box-sizing: border-box;
 }
-@media (min_width: 992px) { 
+p {
+  padding: 10px;
+  border: 2px solid black;
 }
-section {
-  width: 100%;
-  float: none;
+@media (min_width: 992px) { 
+  .section1, .section2, .section3 {
+    width: 33.33%;
+    float: left;
+  }
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .section1 p, .section2 p {
+    width: 50%;
+    float: left;
+  }
+  .section3 p {
+    width: 100%;
+  }
   
 }
 
-@media max-width: 767px) {}
+@media max-width: 767px) {
+  .section1, .section2, .section3 {
+    width: 100%;
+    float: left;
+  }
